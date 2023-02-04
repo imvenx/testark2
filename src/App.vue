@@ -1,15 +1,15 @@
 <template>
   <!-- <router-view /> -->
-  <div>isAbsolute: {{ isAbsolute }}</div>
-  <div>isSupported: {{ isSupported }}</div>
-  <div>alpha: {{ alpha?.toFixed(3) }}</div>
-  <div>beta: {{ beta?.toFixed(3) }}</div>
-  <div>gamma: {{ gamma?.toFixed(3) }}</div>
+  <pre>isAbsolute: {{ isAbsolute }}</pre>
+  <pre>isSupported: {{ isSupported }}</pre>
+  <pre>alpha: {{ alpha?.toFixed(3) }}</pre>
+  <pre>beta: {{ beta?.toFixed(3) }}</pre>
+  <pre>gamma: {{ gamma?.toFixed(3) }}</pre>
 
-  <div>acceleration: {{ acceleration }}</div>
-  <div>accelerationIncludingGravity: {{ accelerationIncludingGravity }}</div>
-  <div>rotationRate: {{ rotationRate }}</div>
-  <div>interval: {{ interval?.toFixed(3) }}</div>
+  <pre>acceleration: {{ JSON.stringify(acceleration) }}</pre>
+  <pre>accelerationIncludingGravity: {{ JSON.stringify(accelerationIncludingGravity) }}</pre>
+  <pre>rotationRate: {{ JSON.stringify(rotationRate) }}</pre>
+  <pre>interval: {{ interval?.toFixed(3) }}</pre>
 </template>
 
 <script setup lang="ts">
@@ -35,7 +35,7 @@ const {
 
 <style>
 * {
-  text-align: center;
+  margin-left: 1em;
   color: greenyellow;
   background-color: black;
   font-size: larger;
